@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classical Physics Day 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h1>Classical Physics</h1>
+                <h3>Day 1: From Newton to Hamilton</h3>
+                <p>An Interactive Journey Through Classical Mechanics</p>
+            </section>
+
+            <!-- Overview -->
+            <section>
+                <h2>Today's Journey</h2>
+                <ul>
+                    <li>Classical Mechanics</li>
+                    <li>Computational Physics Methods</li>
+                    <li>Chaos & Nonlinear Dynamics</li>
+                </ul>
+            </section>
+
+            <!-- Newtonian Mechanics -->
+            <section>
+                <section>
+                    <h2>1. Newtonian Mechanics</h2>
+                    <div id="newton-animation" class="animation-container"></div>
+                </section>
+
+                <section>
+                    <h3>Newton's Laws</h3>
+                    <ul>
+                        <li class="fragment">First Law (Inertia)
+                            <ul>
+                                <li>An object remains at rest or in uniform motion unless acted upon by a force</li>
+                                <li>∑F = 0 ⟹ v = constant</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Second Law (F = ma)
+                            <ul>
+                                <li>F = ma = m(dv/dt) = m(d²x/dt²)</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Third Law (Action-Reaction)
+                            <ul>
+                                <li>F₁₂ = -F₂₁</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Conservation Laws -->
+            <section>
+                <section>
+                    <h2>Conservation Laws</h2>
+                    <div id="conservation-animation" class="animation-container"></div>
+                </section>
+
+                <section>
+                    <h3>Linear Momentum</h3>
+                    <ul>
+                        <li>p = mv</li>
+                        <li>dp/dt = 0 (in absence of external forces)</li>
+                    </ul>
+                    <div class="interactive-demo" id="momentum-demo"></div>
+                </section>
+
+                <section>
+                    <h3>Angular Momentum</h3>
+                    <ul>
+                        <li>L = r × p</li>
+                        <li>dL/dt = 0 (in absence of external torques)</li>
+                    </ul>
+                    <div class="interactive-demo" id="angular-demo"></div>
+                </section>
+            </section>
+
+            <!-- Lagrangian Mechanics -->
+            <section>
+                <section>
+                    <h2>2. Lagrangian Mechanics</h2>
+                    <h3>The Principle of Least Action</h3>
+                    <ul>
+                        <li>Action: S = ∫L dt</li>
+                        <li>Lagrangian: L = T - V</li>
+                        <li>Euler-Lagrange equation:</li>
+                        <li>d/dt(∂L/∂q̇) - ∂L/∂q = 0</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Labs -->
+            <section>
+                <section>
+                    <h2>Interactive Labs</h2>
+                    <ul>
+                        <li>Double Pendulum Simulation</li>
+                        <li>Planetary Motion</li>
+                        <li>Hamiltonian Systems</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Double Pendulum Lab</h3>
+                    <div id="pendulum-simulation" class="animation-container"></div>
+                </section>
+            </section>
+
+            <!-- Code Challenges -->
+            <section>
+                <h2>Code Challenges</h2>
+                <ul>
+                    <li>Advanced Projectile Motion</li>
+                    <li>N-Body Gravitational Problem</li>
+                    <li>Chaos in Simple Systems</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
